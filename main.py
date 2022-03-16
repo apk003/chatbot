@@ -1,3 +1,3 @@
-import bot
+from bot import *
 
-chat_bot = bot()
+chat_bot = Bot()
