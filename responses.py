@@ -1,9 +1,9 @@
 import random
 from data import bot_data
 
-reply_manual = {
+reply_general = {
 
-    # This dictionary will slowly be overhauled
+    # This dictionary will eventually be overhauled
 
     "what's your name?": [
     "They call me {0}".format(bot_data["name"]),
@@ -59,6 +59,22 @@ reply_manual = {
     "The weather is {0}".format(bot_data["weather"]),
     "It's {0} today".format(bot_data["weather"])],
 
+    "how's the weather?" : [
+    "The weather is {0}".format(bot_data["weather"]),
+    "It's {0} today".format(bot_data["weather"])],
+
+    "hows the weather?" : [
+    "The weather is {0}".format(bot_data["weather"]),
+    "It's {0} today".format(bot_data["weather"])],
+
+    "how's the weather" : [
+    "The weather is {0}".format(bot_data["weather"]),
+    "It's {0} today".format(bot_data["weather"])],
+
+    "hows the weather" : [
+    "The weather is {0}".format(bot_data["weather"]),
+    "It's {0} today".format(bot_data["weather"])],
+
     "how are you?": [
     "I am feeling {0}".format(bot_data["mood"]),
     "{0}! How about you?".format(bot_data["mood"]),
@@ -75,6 +91,7 @@ reply_manual = {
 }
 
 reply_moods = {
+    "good" : [[],[]],
     "exit" : [["goodbye","bye","farewell"],
     ["Farewell, friend!", "Goodbye!", "Bye!"]]
 }
